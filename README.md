@@ -1,5 +1,7 @@
 "TrackUSF"
+
 A software for analysis of rodents' Ultra-Sonic vocalizations
+
 "TrackUSFs" is a software that analyze ultrasonic vocalization activity in audio clips. It is doing so by detecting
 ultra-sonic fragments of 6 ms duration within each clip and comparing these fragments between a collection of
 clips that were collected during an experiment. It is also useful for separating non-vocal strong sounds
