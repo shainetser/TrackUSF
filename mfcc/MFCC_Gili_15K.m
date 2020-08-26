@@ -14,7 +14,7 @@ function [ MFCCs, FBEs, frames ] = MFCC_Gili_15K(Speech_signal, Fs)
     HF = 100000;              % upper frequency limit (Hz) -3700
 
     % Feature extraction (feature vectors as columns)
-    [ MFCCs, FBEs, frames ] = mfcc( Speech_signal, Fs, Tw, Ts, alpha, @hamming, [LF HF], M, C+1, L );
+    [ MFCCs, FBEs, frames ] = mfcc_Final( Speech_signal, Fs, Tw, Ts, alpha, @hamming, [LF HF], M, C+1, L );
 
     % Generate data needed for plotting 
     [ Nw, NF ] = size( frames );                % frame length and number of frames
